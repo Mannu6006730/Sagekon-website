@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SageKon Systems - Quick IT Support</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-path-to-root="./">
+
+    <div id="header-placeholder"></div>
+
+    <!-- CONTACT HERO -->
+    <section class="hero" style="padding: 6rem 0; background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2070&auto=format&fit=crop') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Connect with <span>Our Experts</span></h1>
+                <p>Have questions about servers, bulk orders, or GeM procurement? We are here to provide tailored IT advice and competitive quotes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="services-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info Side -->
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 1.5rem; font-size: 2.5rem;">Get in <span style="color: var(--accent);">Touch</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.1rem;">Whether you need a quick quote, stock availability, or have a bulk order query, our team is ready to assist you.</p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem; background: var(--bg-card); border-radius: 1rem; border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--success); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">WhatsApp Support</h4>
+                                <a href="https://wa.me/917051908912?text=Hi, I need a quote for IT solutions" style="color: var(--text-muted); font-weight: 500;">+91 70519 08912</a>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem; background: var(--bg-card); border-radius: 1rem; border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(56, 189, 248, 0.1); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">Email Inquiries</h4>
+                                <a href="mailto:support@sagekon.com" style="color: var(--text-muted); font-weight: 500;">support@sagekon.com</a>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem; background: var(--bg-card); border-radius: 1rem; border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--warning); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">Business Hours</h4>
+                                <p style="color: var(--text-muted); font-weight: 500; margin: 0;">Mon - Sat: 10:00 AM – 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Side -->
+                <div class="contact-form-card">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">Send a Message</h3>
+                    <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully! Our team will contact you soon.'); this.reset();">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+91 xxxxx xxxxx">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message *</label>
+                            <textarea class="form-control" placeholder="How can we help you today?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / MAP SECTION PREVIEW -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Looking for Bulk Procurement?</h2>
+                <p>We specialize in GeM portal orders and enterprise-level hardware deployment across India.</p>
+                <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#contactForm" onclick="document.querySelector('#contactForm textarea').value = 'Hello, I would like to inquire about Bulk Procurement / GeM orders.\n\n';" class="btn btn-outline">Fill Inquiry Form <i class="fa-solid fa-pen"></i></a>
+                    <a href="https://wa.me/917051908912?text=Hello, I would like to inquire about Bulk Procurement and GeM orders." class="btn btn-primary" style="background: var(--success); color: white;">WhatsApp Us <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
