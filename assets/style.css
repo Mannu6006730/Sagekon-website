@@ -82,6 +82,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     scroll-padding-top: 180px;
 }
 
@@ -1290,11 +1291,6 @@ footer {
     .hero p {
         font-size: 1.1rem;
         margin-bottom: 1.5rem;
-    }
-
-    * {
-        max-width: 100%;
-        overflow-wrap: break-word;
     }
 }
 
