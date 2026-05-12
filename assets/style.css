@@ -82,8 +82,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    max-width: 100%;
     scroll-padding-top: 180px;
 }
 
@@ -93,7 +91,8 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
-    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     transition: background-color 0.3s ease, color 0.3s ease;
     padding-top: 170px; /* Offset for fixed header */
 }
@@ -1275,17 +1274,27 @@ footer {
         gap: 1.5rem;
     }
 
-    .testimonial-card {
-        padding: 2rem;
+    .solution-card, .service-item, .contact-form-card, .testimonial-card {
+        padding: 1.5rem !important;
+    }
+
+    .cta-btns {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .header-actions .header-action-item {
         display: none;
     }
 
-    /* Hide labels on mobile */
-    .header-actions {
-        gap: 0.75rem;
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    * {
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 }
 
